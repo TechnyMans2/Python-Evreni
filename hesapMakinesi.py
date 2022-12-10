@@ -30,3 +30,10 @@ elif seçenek == '4':
     print("böl : " + str(böl(sayi1,sayi2)))
 else :
     print("geçersiz operasyon!")
+
+
+
+
+
+
+    
