@@ -1,4 +1,3 @@
-#@ttechnymans / 4 işlemli bir hesap makinesi yaptık. :)
 #@technymans / 4 işlemli bir hesap makinesi yaptık. :)
 
 def topla(sayi1,sayi2):
@@ -10,6 +9,7 @@ def çarp(sayi1,sayi2):
 def böl(sayi1,sayi2):
     return sayi1 / sayi2
 
+print("operasyon giriniz?")
 print("1 : toplam")
 print("2 : çıkar")
 print("3 : çarp")
