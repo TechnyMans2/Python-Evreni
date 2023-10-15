@@ -1,0 +1,29 @@
+print("""*****************
+atm hoş gelidiniz
+İşlemler
+1.Bakiye Sorgulama
+2.Para Çekme
+3.Para Yatırma
+(Çıkmak İçin İşlem Yerine 'q' Giriniz!)
+*****************""")
+
+Bakiye = 1000
+
+while True:
+    işlem = input("Lütfen İşlem Seçiniz: ")
+    if (işlem == "q"):
+        print("Lütfen Kartınızı Alınız!")
+        break
+    if (işlem == "1"):
+        print(Bakiye)
+    elif (işlem == "2"):
+        çekme = int(input("lütfen çekmek istediğiniz tutarı giriniz: "))
+        if (Bakiye < çekme):
+            print("Yetersiz Bakiye!")
+            continue
+        Bakiye = Bakiye - çekme
+    elif (işlem == "3"):
+        yatırma = int(input("Lütfen Yatırmak istediğniz tutarı giriniz: "))
+        Bakiye = Bakiye + yatırma
+    else:
+        print("Hatalı İşlem Seçtiniz.")
